@@ -1,0 +1,12 @@
+- hosts: test00
+  collections:
+    - fortinet.fortios
+
+  connection: httpapi
+
+  tasks:
+    - name: GET FACTS
+      fortios_facts:
+        vdom: root
+        gather_subset:
+          - fact: 'system_status_select'
