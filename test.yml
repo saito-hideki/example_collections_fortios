@@ -2,6 +2,7 @@
   collections:
     - fortinet.fortios
 
+  network_os: fortinet.fortios.fortios
   connection: httpapi
 
   tasks:
