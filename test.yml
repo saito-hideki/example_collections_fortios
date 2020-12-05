@@ -2,9 +2,11 @@
 - hosts: test00
   collections:
     - fortinet.fortios
-
-  network_os: fortinet.fortios.fortios
   connection: httpapi
+
+  vars:
+    ansible_network_os: fortinet.fortios.fortios
+
 
   tasks:
     - name: GET FACTS
