@@ -1,3 +1,4 @@
+---
 - hosts: test00
   collections:
     - fortinet.fortios
